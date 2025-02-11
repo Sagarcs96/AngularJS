@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    
+    <!-- Include AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!-- Include custom JavaScript files -->
+    <script src="./modules/app.js"></script> <!-- Include the app module -->
+    <script src="./controllers/logincontroller.js"></script> <!-- Include the Login Controller -->
+</head>
+<body ng-app="transflower" ng-controller="LoginController">
+    <h1>TFL Store</h1>
+
+    <div>
+        <h2>Login Form</h2>
+        <form ng-submit="onValidate()">
+            <table>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" ng-model="user.email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" name="password" id="password" ng-model="user.password" required></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Login</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product List</title>
+
+    <!-- Include AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!-- Include custom JavaScript files -->
+    <script src="./modules/app.js"></script> <!-- Include the app module -->
+    <script src="./controllers/productcontroller.js"></script> <!-- Include the Product Controller -->
+</head>
+<body ng-app="transflower" ng-controller="ProductController">
+
+    <h1>Product List</h1>
+
+    <!-- Display Products List -->
+    <div>
+        <ol>
+            <li ng-repeat="product in products">
+                {{product.name}} - {{product.price}} - 
+                <img ng-src="{{product.image}}" alt="{{product.name}}" width="100" height="100">
+            </li>
+        </ol>
+    </div>
+
+</body>
+</html>
