@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="onlineShoppingPortal">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Portal</title>
+    <link rel="stylesheet" href="./app/components/auth/auth.css">
+    <link rel="stylesheet" href="./app/components/productCatalog/productCatalog.css">
+    <link rel="stylesheet" href="./app/components/shoppingCart/shoppingCart.css">
+    <link rel="stylesheet" href="./app/components/orderProcessing/orderProcessing.css">
+    <link rel="stylesheet" href="./app/components/shipmentPayment/shipmentPayment.css">
+    <link rel="stylesheet" href="./app/components/crm/crm.css">
+</head>
+<body>
+    <div ng-view></div> <!-- For Angular routing -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./app/app.module.js"></script>
+    <script src="./app/routes/appRoutes.js"></script>
+    <script src="./app/services/productService.js"></script>
+    <script src="./app/services/cartService.js"></script>
+    <script src="./app/services/orderService.js"></script>
+    <script src="./app/services/shipmentService.js"></script>
+    <script src="./app/services/crmService.js"></script>
+    <script src="./app/components/auth/authController.js"></script>
+    <script src="./app/components/productCatalog/productCatalogController.js"></script>
+    <script src="./app/components/shoppingCart/shoppingCartController.js"></script>
+    <script src="./app/components/orderProcessing/orderProcessingController.js"></script>
+    <script src="./app/components/shipmentPayment/shipmentPaymentController.js"></script>
+    <script src="./app/components/crm/crmController.js"></script>
+</body>
+</html>

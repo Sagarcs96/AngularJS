@@ -1,0 +1,18 @@
+<div>
+    <h2>Login</h2>
+    <form ng-submit="login()">
+        <input type="text" ng-model="username" placeholder="Username" required>
+        <input type="password" ng-model="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>Or Register</h2>
+    <form ng-submit="register()">
+        <input type="text" ng-model="username" placeholder="Username" required>
+        <input type="password" ng-model="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <div ng-if="errorMessage">{{ errorMessage }}</div>
+    <div ng-if="successMessage">{{ successMessage }}</div>
+</div>
