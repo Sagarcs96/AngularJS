@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <script src="./angular.min.js"></script>
+  <script src="./dist/controllers/auth.controller.js"></script>
+  <script src="./dist/controllers/app.controller.js"></script>
+  <script src="./dist/app.module.js"></script>
+</head>
+<body ng-app="myApp">
+  <div class="login-container" ng-controller="authController as authCtrl">
+    <h1>My First Angular Application</h1>
+    <h2>Login Form</h2>
+
+    <form name="loginForm" ng-submit="authCtrl.onValidate()" novalidate>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" ng-model="authCtrl.user.email" required />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" ng-model="authCtrl.user.password" required />
+      </div>
+
+      <div>
+        <button type="submit" ng-disabled="loginForm.$invalid">Login</button>
+      </div>
+
+      <div ng-if="authCtrl.message" class="message">
+        <p>{{ authCtrl.message }}</p>
+      </div>
+
+      <!-- Inside your form, after successful login -->
+      <div ng-if="authCtrl.message === 'Login successful! Welcome.'">
+          <a href="./index.html">Check all users</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

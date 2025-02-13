@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Angular App</title>
+  <script src="./angular.min.js"></script>
+  <script src="./dist/controllers/app.controller.js"></script>
+  <script src="./dist/app.module.js"></script>
+</head>
+<body ng-app="myApp">
+    <div id="app-container">
+        <div ng-controller="MyController as vm">
+          {{ vm.message }}
+          <hr/>
+          <h3>All Users</h3>
+          <div ng-repeat="user in vm.users">
+            <p>{{ user.name }} - {{ user.email}} </p> 
+          </div>
+    </div>
+</body>
+</html>
