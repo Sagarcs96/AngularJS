@@ -1,0 +1,8 @@
+<div ng-repeat="product in $ctrl.products" class="product-item">
+  <img ng-src="{{ product.image }}" alt="{{ product.name }}" class="product-image" />
+  <h3>{{ product.name }}</h3>
+  <p>{{ product.description }}</p>
+  <span class="price">${{ product.price.toFixed(2) }}</span>
+  <button ng-click="$ctrl.addToCart(product)">Add to Cart</button>
+</div>
+  

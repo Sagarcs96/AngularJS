@@ -1,0 +1,23 @@
+{
+  "name": "ecommerceapplication",
+  "version": "1.0.0",
+  "main": "angular-route.min.js",
+  "scripts": {
+    "start": "lite-server .",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/angular": "^1.8.9",
+    "@types/angular-route": "^1.7.6",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.3",
+    "javascript": "^1.0.0"
+  },
+  "keywords": [],
+  "description": ""
+}

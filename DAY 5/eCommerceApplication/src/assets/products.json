@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "name": "Smartphone",
+      "price": 699.99,
+      "description": "Latest model with 6.5-inch display, 128GB storage, and powerful processor.",
+      "image": "https://via.placeholder.com/150x150.png?text=Smartphone"
+    },
+    {
+      "id": 2,
+      "name": "Wireless Headphones",
+      "price": 149.99,
+      "description": "Noise-canceling wireless headphones with 30 hours of battery life.",
+      "image": "https://via.placeholder.com/150x150.png?text=Wireless+Headphones"
+    },
+    {
+      "id": 3,
+      "name": "Laptop",
+      "price": 999.99,
+      "description": "14-inch laptop with Intel i7 processor, 16GB RAM, and 512GB SSD.",
+      "image": "https://via.placeholder.com/150x150.png?text=Laptop"
+    },
+    {
+      "id": 4,
+      "name": "Smartwatch",
+      "price": 199.99,
+      "description": "Waterproof smartwatch with heart rate monitoring and fitness tracking.",
+      "image": "https://via.placeholder.com/150x150.png?text=Smartwatch"
+    },
+    {
+      "id": 5,
+      "name": "Tablet",
+      "price": 399.99,
+      "description": "10-inch tablet with high-resolution display, perfect for media consumption.",
+      "image": "https://via.placeholder.com/150x150.png?text=Tablet"
+    },
+    {
+      "id": 6,
+      "name": "Bluetooth Speaker",
+      "price": 79.99,
+      "description": "Portable Bluetooth speaker with waterproof design and 12-hour battery life.",
+      "image": "https://via.placeholder.com/150x150.png?text=Bluetooth+Speaker"
+    },
+    {
+      "id": 7,
+      "name": "4K TV",
+      "price": 499.99,
+      "description": "55-inch 4K Ultra HD smart TV with voice control and streaming apps.",
+      "image": "https://via.placeholder.com/150x150.png?text=4K+TV"
+    },
+    {
+      "id": 8,
+      "name": "Digital Camera",
+      "price": 299.99,
+      "description": "Compact digital camera with 20MP resolution and 4K video recording.",
+      "image": "https://via.placeholder.com/150x150.png?text=Digital+Camera"
+    }
+  ]
+  
