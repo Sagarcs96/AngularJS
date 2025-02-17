@@ -1,0 +1,19 @@
+<div class="login-container" ng-controller="authController as authCtrl">
+  <h1>Login to Your Account</h1>
+  <form name="loginForm" ng-submit="authCtrl.onValidate()" novalidate>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" ng-model="authCtrl.user.email" required />
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" ng-model="authCtrl.user.password" required />
+    </div>
+    <div>
+      <button type="submit" ng-disabled="loginForm.$invalid">Login</button>
+    </div>
+    <div ng-if="authCtrl.message" class="message">
+      <p>{{ authCtrl.message }}</p>
+    </div>
+  </form>
+</div>

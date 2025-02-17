@@ -1,0 +1,13 @@
+<div ng-controller="shoppingCartController as cartCtrl">
+  <h2>Your Shopping Cart</h2>
+  <div ng-repeat="product in cartCtrl.cart" class="cart-item">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <span class="price">${{ product.price.toFixed(2) }}</span>
+    <button ng-click="cartCtrl.removeFromCart(product)">Remove</button>
+  </div>
+
+  <div ng-if="cartCtrl.cart.length === 0" class="empty-cart-message">
+    <p>Your cart is empty.</p>
+  </div>
+</div>
